@@ -50,7 +50,7 @@ function App() {
       <Countries countries={countries} setCountries={setCountries} region={region} inpValue={inpValue} setError={setError} setLoader={setLoader} />
       {
         loader && (
-          <div className="fixed inset-0 flex items-center justify-center bg-white dark:bg-gray-900 z-50">
+          <div className="fixed inset-0 top-32 flex items-center justify-center bg-white dark:bg-gray-900 z-50">
             <span className="loading loading-spinner loading-lg"></span>
           </div>
         )
