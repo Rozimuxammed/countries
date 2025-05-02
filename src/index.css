@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('./fonts/Lexend-Medium.woff2') format('woff2'),
+    url('./fonts/Lexend-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('./fonts/Lexend-Regular.woff2') format('woff2'),
+    url('./fonts/Lexend-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('./fonts/Lexend-SemiBold.woff2') format('woff2'),
+    url('./fonts/Lexend-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer utilities {
+  .lexend {
+    font-family: 'Lexend', sans-serif;
+  }
+
+  .ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .dark {
+    @apply bg-gray-900
+  }
+}
